@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#42e8ff" />
+      <stop offset="50%" stop-color="#7a3dff" />
+      <stop offset="100%" stop-color="#ff48c8" />
+    </linearGradient>
+    <linearGradient id="stroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8f8" />
+      <stop offset="100%" stop-color="#d0fffd" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+    </filter>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#050417" />
+  <rect width="220" height="220" x="18" y="18" rx="48" fill="#050417" stroke="url(#bg)" stroke-width="4" />
+  <g transform="translate(48 48)">
+    <rect width="48" height="48" rx="10" fill="url(#bg)" opacity="0.9" />
+    <rect width="48" height="48" y="54" rx="10" fill="url(#bg)" opacity="0.8" />
+    <rect width="48" height="48" x="54" y="54" rx="10" fill="url(#bg)" opacity="0.95" />
+    <rect width="48" height="48" x="108" y="54" rx="10" fill="url(#bg)" opacity="0.8" />
+    <rect width="48" height="48" x="108" y="108" rx="10" fill="url(#bg)" opacity="0.9" />
+    <rect width="48" height="48" x="54" y="108" rx="10" fill="url(#bg)" opacity="0.75" />
+    <rect width="48" height="48" x="54" rx="10" fill="url(#bg)" opacity="0.7" />
+  </g>
+  <rect width="180" height="180" x="38" y="38" rx="34" stroke="url(#stroke)" stroke-width="3" fill="none" filter="url(#glow)" opacity="0.5" />
+</svg>

@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020311;
+  --foreground: #f9f9fb;
+  --glow-primary: #4dd4ff;
+  --glow-accent: #f25dff;
+  --font-geist-sans: "Space Grotesk", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-geist-mono: "Chakra Petch", "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at 20% 20%, #061a3d, transparent 38%),
+    radial-gradient(circle at 80% 0%, #2c0f38, transparent 46%), #01030b;
+  color: var(--foreground);
+  margin: 0;
+  font-family: var(--font-geist-sans);
+  min-height: 100vh;
+  overscroll-behavior: none;
+}
+
+::selection {
+  background: rgba(77, 212, 255, 0.35);
+}
+
+.glass-panel {
+  background: rgba(7, 12, 29, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(3, 6, 21, 0.7), inset 0 0 20px rgba(77, 212, 255, 0.05);
+  backdrop-filter: blur(24px);
+}
+
+.neon-text {
+  text-shadow: 0 0 12px rgba(77, 212, 255, 0.8), 0 0 30px rgba(242, 93, 255, 0.35);
+}
